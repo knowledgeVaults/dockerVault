@@ -6,7 +6,7 @@ Image layers are the stacked read-only filesystem layers that make up a Docker i
 * Each layer only stores the changes of the previous layer
 * A layer can only be changed by modifying the Dockerfile and initiating a new build
 
-![](https://github.com/knowledgeVaults/imagesVault/blob/main/docker-image-layers.png)
+![](https://raw.githubusercontent.com/knowledgeVaults/imagesVault/main/docker-image-layers.png)
 
 <br>
 
