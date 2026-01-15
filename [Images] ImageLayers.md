@@ -25,5 +25,11 @@ The container layer is the single writable filesystem layer that Docker adds on 
 
 * Not part of the Docker image
 * Exists only for the lifetime of the container
-* Provides a temporary writable filesystem so that the container can run, change files, and produce output while keeping the image immutable
-* Docker copies the changes into the container layer and is designed for temporary state
+* All changes made to the base image are copied and stored into this layer using the **Copy-on-Write** method
+* Designed for temporary state and to provide a temporary filesystem
+ 
+<br>
+
+## Copy-on-Write
+
+CoW is a storage optimization technique Docker uses where Docker will copy a file into the container layer before modifying it
