@@ -1,3 +1,0 @@
-# Docker: Container Orchestartors
-
-#UNFINISHED
